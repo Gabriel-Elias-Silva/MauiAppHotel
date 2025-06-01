@@ -20,6 +20,12 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        private async void AbrirSobre_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Sobre());
+        }
+
     }
+
 
 }

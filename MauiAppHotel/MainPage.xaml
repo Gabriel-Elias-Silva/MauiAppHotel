@@ -15,6 +15,7 @@
 
             <Label
                 Text="Hello, World!"
+                FontFamily="Kalam"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -30,6 +31,8 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+           
+
         </VerticalStackLayout>
     </ScrollView>
 

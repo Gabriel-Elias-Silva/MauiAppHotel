@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#1C1C1C">
+    
+
+    <VerticalStackLayout Padding="30"
+                         Spacing="20"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="26"
+               FontAttributes="Bold"
+               TextColor="Aqua"
+               HorizontalOptions="Center" />
+
+        <Label Text="Desenvolvedor:"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Label Text="Gabriel Elias da Silva"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Gold"
+               HorizontalOptions="Center" />
+
+        <Label Text="Ano de Desenvolvimento:"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Label Text="2025"
+               FontSize="20"
+               TextColor="LimeGreen"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
