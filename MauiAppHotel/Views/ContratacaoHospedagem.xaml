@@ -27,7 +27,7 @@
                              Maximum="10"
                              Increment="1"/>
 
-                    <Label Grid.Row="1" Grid.Column="1" Text="Crianças:"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Crianças:"/>
                     <Label Grid.Row="1" Grid.Column="1"
         TextColor="{StaticResource Primary}"
         Text="{Binding Value}"
@@ -42,7 +42,9 @@
                 <Label Text="Escolha Sua Suite"/>
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione Sua Acomodação"/>
+        Title="Selecione Sua Acomodação"
+        ItemDisplayBinding="{Binding Descricao}" />
+
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
@@ -50,6 +52,7 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in:"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                       DateSelected="dtpck_checkin_DateSelected"    
                                         Format="dd/MM/yyyy"/>
 
                         </HorizontalStackLayout>
