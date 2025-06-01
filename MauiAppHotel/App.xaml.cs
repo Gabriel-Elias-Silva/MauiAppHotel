@@ -36,7 +36,7 @@ new Quarto()
         public App()
         {
             InitializeComponent();
-
+           
             MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
         }
     

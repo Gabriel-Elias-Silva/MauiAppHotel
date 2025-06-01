@@ -4,21 +4,21 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray100}">
+             BackgroundColor="Black">
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
         <Label 
             Text="Calculo da diária"
             FontFamily="Kalam"
             FontSize="50"
-            TextColor="{StaticResource Primary}"/>
+            TextColor="Yellow"/>
         <Frame Padding="10">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*,*,2*">
                     <Label Grid.Row="0" Grid.Column="0" Text="Adultos:"/>
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="Yellow"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
                     <Stepper Grid.Row="0" Grid.Column="2"
@@ -29,7 +29,7 @@
 
                     <Label Grid.Row="1" Grid.Column="0" Text="Crianças:"/>
                     <Label Grid.Row="1" Grid.Column="1"
-        TextColor="{StaticResource Primary}"
+        TextColor="Yellow"
         Text="{Binding Value}"
         BindingContext="{x:Reference stp_crianças}"/>
                     <Stepper Grid.Row="1" Grid.Column="2"
@@ -69,6 +69,8 @@
 
                 </Frame>
                 <Button Text="Avançar"
+                     BackgroundColor="Yellow"
+                        TextColor="black"
                         Clicked="Button_Clicked"/>
 
 
